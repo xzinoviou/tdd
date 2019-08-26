@@ -1,6 +1,5 @@
 TODO:
 $5 + 10CHF = $10 if rate is 2:1
-Make amount private
 Money rounding
 hashCode()
 equal null
@@ -10,3 +9,4 @@ DONE:
 $5 * 2 = $10
 Dollar side effects
 equals()
+Make amount private

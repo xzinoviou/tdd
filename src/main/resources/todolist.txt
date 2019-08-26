@@ -4,6 +4,7 @@ Money rounding
 hashCode()
 equal null
 equal object
+5 CHF * 2 = 10 CHF
 
 DONE:
 $5 * 2 = $10

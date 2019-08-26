@@ -4,10 +4,13 @@ Money rounding
 hashCode()
 equal null
 equal object
-5 CHF * 2 = 10 CHF
+Dollar/Franc duplication
+common times
 
 DONE:
 $5 * 2 = $10
+5 CHF * 2 = 10 CHF
 Dollar side effects
 equals()
 Make amount private
+common equals

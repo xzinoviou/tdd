@@ -6,6 +6,7 @@ public class Money {
   protected int amount;
 
   public boolean equals(Object o) {
-    return amount == ((Money) o).amount;
+    Money money = (Money) o;
+    return getClass().equals(money.getClass()) && amount == money.amount;
   }
 }

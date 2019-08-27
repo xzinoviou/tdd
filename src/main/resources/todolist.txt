@@ -6,12 +6,14 @@ equal null
 equal object
 Dollar/Franc duplication
 common times
+redundant testFrancMultiplication
 
 DONE:
-$5 * 2 = $10
 5 CHF * 2 = 10 CHF
+Make amount private
 Dollar side effects
 equals()
-Make amount private
+$5 * 2 = $10
 common equals
 Compare Franc to dollar
+currency

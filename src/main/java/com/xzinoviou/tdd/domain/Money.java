@@ -1,7 +1,7 @@
 package com.xzinoviou.tdd.domain;
 
 /** @author xzinoviou created 26/8/19 */
-abstract class Money {
+class Money {
 
   protected int amount;
 
@@ -14,7 +14,7 @@ abstract class Money {
 
   public boolean equals(Object o) {
     Money money = (Money) o;
-    return getClass().equals(money.getClass()) && amount == money.amount;
+    return currency().equals(((Money) o).currency()) && amount == money.amount;
   }
 
   static Money dollar(int amount) {
@@ -25,9 +25,16 @@ abstract class Money {
     return new Franc(amount, "CHF");
   }
 
-  abstract Money times(int multiplier);
+  Money times(int multiplier) {
+    return new Money(amount * multiplier, currency);
+  }
 
   String currency() {
     return currency;
+  }
+
+  @Override
+  public String toString() {
+    return "Money{" + "amount=" + amount + ", currency='" + currency + '\'' + '}';
   }
 }

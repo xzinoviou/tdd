@@ -14,3 +14,4 @@ Dollar side effects
 equals()
 Make amount private
 common equals
+Compare Franc to dollar

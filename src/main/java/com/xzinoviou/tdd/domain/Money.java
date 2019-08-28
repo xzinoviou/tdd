@@ -1,7 +1,7 @@
 package com.xzinoviou.tdd.domain;
 
 /** @author xzinoviou created 26/8/19 */
-class Money implements Expression{
+class Money implements Expression {
 
   protected int amount;
 
@@ -34,7 +34,11 @@ class Money implements Expression{
   }
 
   Expression plus(Money addend) {
-    return new Money(amount + addend.amount, currency);
+    return new Sum(this, addend);
+  }
+
+  public Money reduce(String to) {
+    return this;
   }
 
   @Override

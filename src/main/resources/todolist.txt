@@ -1,22 +1,19 @@
 TODO:
-return Money from $5 + $5
-Money rounding
-hashCode()
-equal null
-equal object
-Dollar/Franc duplication
-redundant testFrancMultiplication
-Sum.plus
-Expression.times
 
 DONE:
+return Money from $5 + $5
 $5 + 10CHF = $10 if rate is 2:1
 5 CHF * 2 = 10 CHF
 $5 + $5 = $10
 reduce Money with conversion
 reduce(Bank,String)
+hashCode()
+equal null
+equal object
+Dollar/Franc duplication
 Make amount private
 Dollar side effects
+Money rounding
 equals()
 $5 * 2 = $10
 dollar/franc duplication
@@ -26,3 +23,5 @@ Compare Franc to dollar
 currency
 delete testFrancMultiplication
 Bank.reduce(Money)
+Sum.plus
+Expression.times
